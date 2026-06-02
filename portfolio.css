@@ -2,7 +2,7 @@
     --bg: #0a0a0f;
     --surface: #111118;
     --surface2: #1a1a26;
-    --accent: #e8ff47;
+    --accent: #4787ff;
     --accent2: #ff4766;
     --text: #f0f0f8;
     --muted: #6b6b88;
@@ -17,6 +17,7 @@ body {
     color: var(--text);
     font-family: var(--font-body);
     overflow-x: hidden;
+    padding-top: 10px;
 }
 
 body::before {
@@ -30,21 +31,127 @@ body::before {
 }
 
 nav {
-    position: fixed;
+    display: block;
+    position: top;
     top: 0; left: 0; right: 0;
     z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
+    padding-top: 10px;
     backdrop-filter: blur(20px);
     background: rgba(10,10,15,0.7);
     border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: -0.02em;
-      color: var(--accent);
-    }
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 56px;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+}
+
+ul {
+    align-items: right;
+}
+
+li {
+    font-family: var(--font-body);
+    font-size: 32px;
+    display: inline;
+    margin: 5px;
+}
+
+a:hover { color: var(--accent)}
+
+section {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--border)
+}
+
+.welcome {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 54px;
+}
+
+.banner {
+    padding: 10px;
+    background-color: var(--border);
+}
+
+/* About */
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.5px;
+    border: 1.5px solid var(--border);
+}
+
+.project-card {
+    background: var(--surface);
+    padding: 2.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    transition: background 0.2s;
+}
+
+.project-card:hover {
+    background-color: var(--muted);
+    cursor: pointer;
+}
+
+.project-title {
+    font-family: var(--font-mono);
+    font-size: 24px;
+    align-self: center;
+}
+
+.project-description {
+    font-family: var(--font-body);
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-tag {
+    display: inline;
+    background-color: var(--accent);
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.project-linkto {
+    font-family: var(--font-mono);
+    margin: 0;
+    margin-left: auto;
+    transition: 0.2s;
+}
+
+.project-linkto:hover {
+    color: var(--surface2);
+    text-decoration: underline;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
