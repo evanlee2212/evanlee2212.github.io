@@ -30,6 +30,7 @@ body::before {
     opacity: 0.4;
 }
 
+/* NAV */
 nav {
     display: block;
     position: top;
@@ -83,7 +84,8 @@ section {
 h1 {
     display: block;
     font-family: var(--font-display);
-    font-size: 54px;
+    font-size: 5rem;
+    margin: 1rem;
 }
 
 .banner {
@@ -91,7 +93,59 @@ h1 {
     background-color: var(--border);
 }
 
-/* About */
+/* ABOUT */
+.about-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.about-desc {
+    font-family: var(--font-body);
+    color: var(--muted);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    white-space: wrap;
+    text-indent: 3rem;
+} 
+
+.about-desc strong { color: var(--text); }
+
+.about-cardholder {
+    align-self: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-card {
+    background-color: var(--surface2);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+.about-card:hover {
+    box-shadow: 0.3rem 0.3rem 0.5rem var(--muted);
+}
+
+.card-num {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.card-label {
+    margin-left: 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--muted);
+}
 
 /* PROJECTS */
 .projects-grid {
@@ -134,7 +188,12 @@ h1 {
     height: 1.2rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 0.2s;
+}
+
+.project-tag:hover {
+    opacity: 0.6;
 }
 
 .project-linkto {
@@ -154,4 +213,37 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+}
+
+/* SKILLS */
+.skills-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.skills-column {
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.skills-column-header {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    border-bottom-color: var(--accent);
+}
+
+.skills-break {
+    height: .5px;
+    background-color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.skills-column-item {
+    font-family: var(--font-body);
+    padding: 0.25rem 0;
+    text-align: center;
 }
