@@ -21,19 +21,10 @@
         <!--WELCOME-->
         <section class="welcome">
             <h1>Evan Lee</h1>
-            <p>
+            <p class="welcome-text">
                 CS grad & software engineer ready to build real code
             </p>
         </section>
-
-        <!--BANNER-->
-        <div class="banner">
-            <div>
-                <span> BANNER ELEMENTS </span>
-                <span> Developer </span>
-                <span> CS Graduate </span>
-            </div>
-        </div>
 
         <!-- ABOUT-->
         <section id="about">
@@ -88,9 +79,9 @@
                     <div class="project-tag">
                         Firebase
                     </div>
-                    <p class="project-linkto">
+                    <a href="https://github.com/evanlee2212/sleep_tracker/tree/main" target="_blank" class="project-linkto">
                         Go to project &rarr;
-                    </p>
+                    </a>
                 </div>
             </div>
             <div class="project-card">
@@ -110,9 +101,9 @@
                     <div class="project-tag">
                         Graphics
                     </div>
-                    <p class="project-linkto">
+                    <a href="https://github.com/evanlee2212/ray-tracer" target="_blank" class="project-linkto">
                         Go to project &rarr;
-                    </p>
+                    </a>
                 </div>
             </div>
             <div class="project-card">
@@ -159,12 +150,47 @@
         <!--CONTACT-->
         <section id="contact">
             <h1>Contact</h1>
-
+            <div class="contact-body">
+                <div class="contact-left">
+                    <p class="contact-caption">I'm actively looking for full-time roles. If you have an opportunity, questions, or would like to connent - my inbox is open.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:evan.lee.2212@gmail.com" target="_blank" class="contact-link">
+                            <span class="contact-link-icon">&#9993;</span>
+                            <span class="contact-link-label">evan.lee.2212@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/evanlee2212" target="_blank" class="contact-link">
+                            <span class="contact-link-icon">GH</span>
+                            <span class="contact-link-label">github.com/evanlee2212</span>
+                        </a>
+                        <a href="https://linkedin.com/in/evan-lee-90968a327" target="_blank" class="contact-link">
+                            <span class="contact-link-icon">IN</span>
+                            <span class="contact-link-label">linkedin.com/in/evan-lee-90968a327</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/mzdqddvg" method="POST">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" class="form-input" placeholder="Jane Smith">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-input" placeholder="jane@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea name="message" class="form-textarea" placeholder="Tell me about the role or project..."></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn" style="text-align:center;">Send Message</button>
+            
+                </form>
+            </div>
         </section>
     </body>
 
     <footer>
-        <p>&copy Evan Lee. Built with HTML + CSS</p>
-        <p>evanlee2212.github.io</p>
+        <p>&copy 2026 Evan Lee. Built with HTML + CSS</p>
+        <p align="center">evanlee2212.github.io</p>
     </footer>
 </html>
